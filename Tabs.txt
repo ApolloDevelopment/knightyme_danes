@@ -1,0 +1,56 @@
+KnighTymeDanes
+
+Home
+ - We have quality, healthy Great Danes with sound temperaments and lovable personalities!!
+We are Knightyme Danes and we are located in Sellersburg, Indiana, just 9 miles North of Louisville, Kentucky. I have
+bred and raised Great Danes for over 18 years. Our breeding program consists of European
+and American bloodlines. All of our Danes have AKC  papers. We breed Beautiful
+Harlequins, Mantles, Merles, Blues, Chocolates, Blacks, Brindles, Fawns, & Lilac Great Danes. We also have Porcelain,
+Choclequin & Lilacquin Great Danes. Porcelain Danes have Blue patches, Choclequin Danes have
+Chocolate patches and Lilaquins have Lavender/purple colored patches.
+ - contact
+  - Phone: (502) 645-3831
+  - Email: rak0523@yahoo.com
+
+Puppies (sign in to change pictures)
+ - Future Litters
+ - Available
+ - Past (Photo Gallery)
+Our Studs
+ - Males
+ - Females
+
+
+Specifics:
+ - Be able to change pictures (maybe with iphone)
+ - All text bold arial
+
+
+(top left)
+Black/White: Main Stud
+Tan/BrownSpots: Other Stud
+
+
+
+
+card layout (be sure to place inside a row div)
+
+<div class="col-md-4">
+  <div class="card mb-4 box-shadow">
+    <div class="card-div-top" style="background-image:url('../img/female_b-lab.jpg')" onclick="window.location='card.html?id=14'">
+      <div class="view-opt-contain">
+        <p class="view-txt">View</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-lg btn-outline-secondary" onclick="window.location='edit.html?id=14'">Edit</button>
+        </div>
+        <small class="text-muted">9 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>

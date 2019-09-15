@@ -1,0 +1,96 @@
+
+DONE:
+  - cust_funcs.php. generate_key(int)
+
+Colors:
+  - Matte Black: #2d3436
+  - Matte Black (Hover/active): #171b1c
+  - BG: #f2f2f2
+  -
+
+Fonts:
+  - Header: 'Kaushan Script', cursive;
+  -
+
+Font-Awesome Icons:
+  - My Account: <i class="fas fa-user-cog"></i>
+  - Add User: <i class="fas fa-user-plus"></i>
+  - Home: <i class="fas fa-home"></i>
+  - Paw: <i class="fas fa-paw"></i>
+  - logout: <i class="fas fa-sign-out-alt"></i>
+  - users: <i class="fas fa-users"></i>
+  ---------------------------------------
+  - Add: <i class="fas fa-plus"></i>
+  - Trash:
+  - 3dots: <i class="fas fa-ellipsis-v"></i>
+
+
+
+Dane Table:
+  - id (int)
+  - name (varchar 60)
+  - sex (male/female/litter)
+  - description
+  - availability (varchar 32)
+  - date --> format: date("M j, Y"); --> May 29, 2019
+  $today = (date("M") == "May" || date("M") == "June" || date("M") == "July") ? date("M j, Y") : date("M. j, Y");
+  date_default_timezone_set("America/New_York");
+  $time = date("H") > 12 ? (date("H")-12).":".date("i A") : date("H:i A");
+  - image_name (varchar 255)
+
+Admin Table:
+  - id (int)
+  - first name (varchar)
+  - middle initial (char)
+  - last name (varchar)
+  - username (varchar)
+  - pwd (longtext)
+
+
+TODO: about.php // dane.php
+
+How to set everything up:
+1. Buy a web hosting service (host gator)
+2. Buy a domain
+3. https://www.youtube.com/watch?v=9Kdu2IQlKHs
+4. Add the domain to cPanel
+5. https://www.youtube.com/watch?v=ZxMH1l-YjaA
+6. Set up database
+7. https://www.youtube.com/watch?v=L6TlZUQd7e0
+
+
+
+
+
+
+
+
+
+
+info ---
+
+Username: dragons13
+Password: Heather0523
+
+
+
+
+
+Add:
+
+- For future litters, show stud and female parents (as well as in the available puppies)
+
+
+
+
+
+Edited Things:
+ - Databases (added litters)
+	- id (int)
+	- name (varchar 32)
+	- father_id (int) NOT NULL
+	- mother_id (int) NOT NULL
+
+- Files
+    - all.php (changed to only able to add parent first, added buttons)
+    - delete.php (added self-storage-management functionality)

@@ -1,0 +1,18 @@
+Database: danes
+ - Tables: admin, pups
+ ---admin---
+id (int 11)
+firstName (varchar 32)
+middle (char 1)
+lastName (varchar 32)
+userName (varchar 32)
+pwd (longtext) ( $2y$10$npzrol/LeJQrwEEvWVIJYeScV4W/5pPghSveL6VqujmhENFfgLzdy )
+
+ ---pups--- 
+id (int 11)
+name (varchar 60)
+sex (varchar 12)
+description (longtext)
+availability (varchar 32)
+image_name (varchar 255)
+upload_date (varchar 32)

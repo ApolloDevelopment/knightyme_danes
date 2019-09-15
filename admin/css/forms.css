@@ -1,0 +1,18 @@
+body {
+  overflow-x: hidden;
+}
+input {
+  margin-bottom: 25px;
+}
+
+.login-header {
+  margin-top: calc(100vw * 0.02); /* 2% of the width of the width to keep a consistent proportion */
+}
+
+/* button.btn {
+  padding: 15px 35px !important;
+} */
+
+::placeholder, option {
+  font-weight: normal !important;
+}

@@ -1,0 +1,98 @@
+.card-div-top {
+  width: 100%;
+  height: 320px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-div-top:hover {
+  cursor: pointer;
+}
+
+.box-shadow {
+  box-shadow: 0.1px 0.1px 5px #636e72;
+  transition: 0.3s;
+}
+
+.view-opt-contain {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.view-txt {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 32px;
+}
+
+#slideShow {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  transition: 0.4s;
+  display: none;
+}
+i {
+  color: inherit;
+}
+.arrow {
+  color: #FFF;
+  padding: 0px 20px;
+  position: absolute;
+  transform-origin: center;
+  top: 45%;
+  font-size: 45px;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 8;
+} .arrow:hover {
+  padding: 0px 30px;
+}
+#left {
+  left: 0;
+}
+#right {
+  right: 0;
+}
+.slideshow-img {
+  position: relative;
+  z-index: 6;
+  margin: 5vh auto;
+  height: 90%;
+  width: 553.5px;
+  background-position: center;
+  background-size: contain; /* bg size of "contain" keeps the image at the same ratio the entire time as well as auto-sizing it */
+  background-repeat: no-repeat;
+}
+.closeSlides {
+  font-size: 45px;
+  position: absolute;
+  z-index: 7;
+  cursor: pointer;
+  color: #FFF;
+  transform-origin: center;
+  right: 30px;
+  transition: 0.2s;
+}
+/* media for slideshow img */
+@media(max-width:739px){
+  .slideshow-img {
+    width: 75%;
+  }
+}
+
+@media(max-width:767px) {
+
+  .card-div-top {
+    background-size: auto;
+  }
+
+}

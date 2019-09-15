@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold !important;
+}
+
+body {
+  background-color: #f2f2f2 !important;
+  overflow-x: hidden;
+}
+
+.navbar-brand {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 28px;
+}
+.page-header {
+  font-size: 48px !important;
+  text-align: center;
+  width: 100%;
+  font-weight: normal !important
+}
+
+.light {
+  color: #bbb !important;
+}
+
+.card-img {
+  height: 150px !important;
+  background-size: contain;
+}
+
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #2d3436;
+  width: 100px;
+  z-index: 6;
+}
+.navigation-items i {
+  font-size: 30px;
+  color: #ccc;
+}
+.active i {
+  color: #fff;
+}
+/* full list */
+.navigation-items {
+  margin-top: 20px;
+}
+/* individual item */
+.navigation-item {
+  padding: 20px 0px 5px 0px;
+  width: 100%;
+  transition:0.3s;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #ccc;
+}
+.navigation-item:hover {
+  background-color: #171b1c;
+}
+.active {
+  background-color: #171b1c;
+  cursor: default;
+  color: #fff;
+}
+
+.content {
+  position: relative;
+  width: calc(100vw - 100px);
+  transform: translateX(100px);
+  margin: 40px 0;
+}
+
+.section {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.section>h1 {
+  margin-bottom: 10px;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: normal !important;
+}
+h5.card-title, .section>h1 {
+  color: #171b1c;
+}
+/* ------------- For the edit button ---------------------- */
+.more-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100px;
+}
+i.more {
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 3; /* if z-index is not defined, you cannot interact with it */
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 2px;
+
+  transition: 0.2s;
+}
+i.more:hover {
+  background-color: #ddd;
+}
+.more-options {
+  display: none;
+  position: absolute;
+  left: -90px;
+  top: -20px;
+  background-color: #fff;
+  width: 150%;
+  text-align: center;
+  box-shadow: 0px 0px 10px #ccc;
+  z-index: 3;
+}
+.edit-option {
+  border-bottom: 1px #ccc solid;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.edit-option:hover {
+  background-color: #ccc;
+}
+.edit-option:last-child {
+  border: none;
+}
+/* ------------------------------------------------------ */
+.option {
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 10px 15px 0px 15px;
+}
+.option:hover {
+  box-shadow: 0px 0px 10px #ccc;
+}
+p.card-text {
+  font-weight: normal !important;
+}
+
+
+/* Modals for edit and delete dane */
+.modal-filter {
+  position: fixed;
+  width: calc(100vw - 100px);
+  transform: translateX(100px);
+  top: 0;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 4;
+}
+
+.modal-box {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: #fff;
+  z-index: 4;
+  height: 90%;
+  width: 50%;
+  top: 5%;
+  overflow-y: scroll;
+  transform-origin: center;
+  transform: translateX(50%);
+  border-radius: 10px;
+}
+
+#changeNameModal,
+#changeUsernameModal,
+#changePasswordModal,
+#resetPasswordModal,
+#hidden {
+  display: none;
+}
+
+.home {
+  padding-top: 30vh;
+}
+.home h1.welcome {
+  font-size: 56px !important;
+  font-weight: bold;
+  color: #171b1c;
+  padding-bottom: 25px;
+}
+.home .dateTime {
+  font-size: 36px;
+  color: #171b1c;
+  font-weight: bold;
+}
+.dateTime .date {
+  padding-right: 10px;
+}
+.dateTime .time {
+  padding-left: 10px;
+}
+
+.text-good {
+  color: #2ecc71 !important;
+}
+.price {
+  color: #27ae60 !important;
+}
+
+@media(max-width: 766px){
+  .content {
+    margin: 30px 0;
+  }
+}
+@media(max-width:430px){
+  .page-header {
+    font-size: 36px;
+  }
+  .content {
+    margin: 20px 0;
+  }
+}

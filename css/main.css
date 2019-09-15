@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+/*
+
+font-family: 'Arial', sans-serif;
+font-family: 'Georgia', serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold !important;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+i {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-brand {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 28px;
+}
+
+.align-right {
+  text-align: right !important;
+} .align-left {
+  text-align: left !important;
+}
+
+table {
+  width: 100%;
+}
+table tr td p {
+  margin-right: 5px !important;
+}
+
+.active a {
+  color: rgba(0,0,0,.9) !important;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: rgba(0,0,0,.5) !important;
+  transition: 0.1s;
+}
+.nav-link:hover {
+  color: rgba(0,0,0,.7) !important;
+}
+
+.top-page-img {
+  width: 160px;
+  position: absolute;
+  top: 0;
+  border: 1.5px #636e72 solid;
+} .left {
+  left: 0;
+} .right {
+  right: 0;
+}
+
+.nav2-expand-btn {
+  display: none;
+  font-size: 40px;
+}
+
+.nav2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  height: 100%;
+  width: 300px;
+  z-index: 4;
+  padding: 0px 10px;
+  background-color: #2d3436;
+  transition: 0.4s ease-out;
+}
+.nav2 .nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 25px;
+  transition: 0.1s;
+}
+.nav2 .nav-link:hover, #close:hover {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+#close {
+  font-size: 50px;
+  text-align: right;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0px 10px;
+  transition: 0.1s;
+  z-index: 4;
+}
+
+.content {
+  margin: 40px 0;
+}
+
+.page-header {
+  font-size: 48px;
+  text-align: center;
+  width: 100%;
+  font-weight: normal !important;
+}
+
+.site-description {
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  width: 95%;
+}
+
+.page-img {
+  border: 1px #636e72 solid;
+  box-shadow: #2d3436 0.1px 0.1px 5px;
+}
+
+.home-pg-img {
+  margin: 20px 20% 20px 20%;
+  text-align: center;
+  width: 60%;
+}
+
+.contact-sect {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+.contact-sect h2 {
+  border-bottom: 2px #000 solid;
+}
+.contact-sect p {
+  margin: 0 20px;
+}
+
+.footer {
+  background-color: #2d3436;
+  text-align: center;
+  padding: 35px;
+  color: #FFF;
+  font-size: 14px;
+
+}
+.footer p {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+.admin-link {
+  font-size: 12px;
+  color: #ccc;
+  padding: 5px;
+  transition: 0.1s;
+}
+.admin-link:hover {
+  color: #fff;
+}
+
+@media(max-width:1483px){
+  .top-page-img {
+    display: none;
+  }
+}
+@media(max-width: 1280px) {
+  .home-pg-img {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+
+/* Navbar breaking point
+
+TODO:
+ -
+
+ */
+
+@media(max-width:992px) {
+  .nav {
+    display: none;
+  }
+  .nav2-expand-btn {
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    left: 15px;
+    top: 5px;
+    z-index: 3;
+  }
+}
+
+@media(max-width:766px) {
+  .header-img {
+    display: none;
+  }
+  .content {
+    margin: 30px 0;
+  }
+  .site-description {
+    font-weight: normal;
+  }
+}
+
+@media(max-width:430px){
+  .page-header {
+    font-size: 36px;
+  }
+  .content {
+    margin: 20px 0;
+  }
+}
+
+@media(max-width:385px){
+  .navbar img {
+    display: none;
+  }
+}

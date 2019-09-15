@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+.dane-image {
+  height: 408px;
+}
+
+button.back-btn {
+  margin: 10px 0;
+}
+
+button > i {
+  color: #fff;
+}
+
+p.dane-description,
+p.dane-availability {
+  margin: 0px auto;
+  font-size: 18px;
+  text-align: center;
+  width: 90%;
+  padding-bottom: 5px;
+  margin-bottom: 2px;
+}
+p.dane-availability {
+  border-bottom: 1px #212529 solid;
+}
+
+.litter-page-header {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 48px;
+  text-align: center;
+  width: 100%;
+  font-weight: normal !important;
+  margin-bottom: 20px;
+}
+.litter-parent-header {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 32px;
+  text-align: center;
+  font-weight: normal !important;
+}
+.mother-text {
+  color: #e84393;
+} .father-text {
+  color: #54a0ff;
+}
+
+.border-male {
+  border: 4px #54a0ff solid;
+} .border-female {
+  border: 4px #e84393 solid;
+} .border-default {
+  border: 3px #212529 solid;
+}
+
+.puppy-container {
+  min-width: 250px;
+  max-width: 500px;
+  width: 30%;
+  display: inline-block;
+  /* border: 1px #000 solid; */
+  position: relative;
+  margin: 15px 1.5%;
+  padding: 5px;
+} .puppy-img {
+  width: 100%;
+  margin: 10px 0;
+  border: 2px #555 solid;
+}
