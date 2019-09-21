@@ -41,7 +41,7 @@ EOT;
             ?>
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                  <div class="card-div-top" style="background-image:url('../img/<?= $image ?>')" onclick="slide_show('../img/<?= $image ?>')">
+                  <div class="card-div-top" style="background-image:url('../img/<?= $image ?>'); background-size:contain;" onclick="slide_show('../img/<?= $image ?>')">
                     <div class="view-opt-contain">
                       <p class="view-txt">View</p>
                     </div>

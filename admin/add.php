@@ -81,7 +81,7 @@
         <!-- Add Puppy Form -->
         <?php if($type == 'puppy'): ?>
           <form class="form-group" method="POST" autocomplete="off" action="inc/add.inc.php?type=puppy" enctype="multipart/form-data">
-            <input type="file" name="image" accept=".png,.jpg,.jpeg,.img,.pdf">
+            <input type="file" name="images[]" accept=".png,.jpg,.jpeg,.img,.pdf" multiple>
             <br><br>
             <span class="col-md-9">
               <label for="name" style="margin-left:-15px;">Name</label>

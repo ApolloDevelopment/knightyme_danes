@@ -8,7 +8,7 @@ if(!isset($_POST['add_dane'])) {
 } else {
   // PUPPY DANE UPLOAD HANDLER
   if($type == 'puppy'){
-    $image = $_FILES['image'];
+    $image = $_FILES['images'];
     //image name
     $imageName = $image['name']; // name provided by users
     //file tmp name///////////////////
